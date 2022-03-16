@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 /* COMMON */
 body {
   font-family: "Noto Sans KR", sans-serif;
@@ -28,6 +29,7 @@ a.btn:hover {
   opacity: 1;
 }
 
+
 /* LAYOUT CSS */
 .container {
   border: 1px solid yellow;
@@ -46,6 +48,12 @@ a.btn:hover {
 }
 .header img {
 }
+a.btn2:before {
+  content: url(KSH_LION_img/icon_google.png);
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
 .login {
   padding: 0 15px;
   /* border: 1px solid red; */
@@ -55,38 +63,36 @@ a.btn:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.login-title {
-  position: relative;
-  /* border: 1px solid blue; */
-}
+
 .login-title h2 {
   font-weight: normal;
 }
 .login-title p:nth-of-type(1) img {
   vertical-align: middle;
 }
-.login-title-member {
+.login-title div ul {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-bottom: 30px;
 }
-.login-title-member a {
-  padding: 0 10px;
+.login-title div ul li {
+  list-style: none;
+  position: relative;
+  padding: 0 18px;
 }
-.login-title .btn-member::before {
-  content: "";
-  width: 2px;
-  height: 12px;
-  background-color: #5C5C5C;
-  position: absolute;
-  margin: auto;
+.login-title div ul li ~ li:after {
+  content: ""; 
+  position: absolute; 
+  left: 0; 
+  top: 4px; 
+  height: 14px; 
+  width: 2px; 
+  background: gray; 
 }
-.login-title .btn-member:first-child::before {
-  display: none;
-}
+
 span.or-txt {
   display: block;
-  margin: 15px 0;
+  margin: 10px 0;
   position: relative;
   text-align: center;
 }

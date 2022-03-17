@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 /* COMMON */
 body {
   font-family: "Noto Sans KR", sans-serif;
@@ -32,7 +31,6 @@ a.btn:hover {
 
 /* LAYOUT CSS */
 .container {
-  border: 1px solid yellow;
   background-color: #f5f5f5;
   height: 100vh;
 }
@@ -46,26 +44,29 @@ a.btn:hover {
 .header h1 {
   font-size: 18px;
 }
-.header img {
-}
-a.btn2:before {
-  content: url(KSH_LION_img/icon_google.png);
+.header h1::after {
+  content: url(./KSH_LION_img/close.png);
   position: absolute;
-  left: 10px;
   top: 15px;
+  right: 25px;
+  
 }
+
 .login {
   padding: 0 15px;
-  /* border: 1px solid red; */
   width: 480px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #fafafa;
 }
-
 .login-title h2 {
   font-weight: normal;
+}
+.login-title p {
+  color: gray;
+  font-size: 16px;
 }
 .login-title p:nth-of-type(1) img {
   vertical-align: middle;
@@ -86,20 +87,21 @@ a.btn2:before {
   left: 0; 
   top: 4px; 
   height: 14px; 
-  width: 2px; 
+  width: 1px; 
   background: gray; 
 }
 
 span.or-txt {
+  color: gray;
   display: block;
-  margin: 10px 0;
+  margin: 30px 0;
   position: relative;
   text-align: center;
 }
 span.or-txt:before {
   content: "";
   position: absolute;
-  top: 7px;
+  top: 10px;
   left: 0;
   background-color: #5C5C5C;
   width: 44%;
@@ -108,7 +110,7 @@ span.or-txt:before {
 span.or-txt:after {
   content: "";
   position: absolute;
-  top: 7px;
+  top: 10px;
   right: 0;
   background-color: #5C5C5C;
   width: 44%;
@@ -143,26 +145,26 @@ span.or-txt:after {
   color: #5C5C5C;
   border-color: #FFD700;
 }
-a.btn2:before {
-  content: url(KSH_LION_img/icon_google.png);
+a.btn2::before {
+  content: url(./KSH_LION_img/icon_google.png);
   position: absolute;
   left: 10px;
   top: 15px;
 }
-a.btn3:before {
-  content: url(KSH_LION_img/icon_facebook.png);
+a.btn3::before {
+  content: url(./KSH_LION_img/icon_facebook.png);
   position: absolute;
   left: 10px;
   top: 15px;
 }
-a.btn4:before {
-  content: url(KSH_LION_img/icon_naver.png);
+a.btn4::before {
+  content: url(./KSH_LION_img/icon_naver.png);
   position: absolute;
   left: 10px;
   top: 15px;
 }
-a.btn5:before {
-  content: url(KSH_LION_img/icon_kakao.png);
+a.btn5::before {
+  content: url(./KSH_LION_img/icon_kakao.png);
   position: absolute;
   left: 10px;
   top: 15px;
